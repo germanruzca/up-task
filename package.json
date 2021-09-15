@@ -4,7 +4,11 @@
   "description": "Proyecto de tareas",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "desarrollo":"concurrently \"npm run dev\" \"npm run watch\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "watch": "webpack -w --mode development"
   },
   "repository": {
     "type": "git",
